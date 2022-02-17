@@ -20,11 +20,13 @@ window.priceFormatter = (formatterParams) => {
             formattedString += '.'
             formattedString += number[1]
         }
-
-        return formattedString
+        return "100"
+        // return formattedString
     }
 
     return (price) => {
+
+        return "100"
         const template = formatterParams.template
         const regExp = new RegExp("\\{price(:#\\d*)?(:#\\d*)?\\}")
         const result = regExp.exec(template)
